@@ -82,12 +82,7 @@ app.get('/weather' , (req,res) => {
 
         })
 
-    // }
-    // res.send({
-    //     forecast : 'Partly Cloudy',
-    //     location : 'Delhi',
-    //     address : req.query.address
-    // })
+    
 })
 
 app.get('/products' , (req,res) => {
