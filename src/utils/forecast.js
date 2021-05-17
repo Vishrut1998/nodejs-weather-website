@@ -15,8 +15,8 @@ const forecast = (latitude , longitude , callback) =>{
             callback('Unable to fetch the cordinates. Please check the cordinates again',undefined);
         }
         else{
-            const {temperature , weather_descriptions} = body.current;
-            callback(undefined , `The temperature is ${temperature}\u00B0 and the overall forecast is ${weather_descriptions}`)
+            const {temperature , weather_descriptions , feelslike , humidity} = body.current;
+            callback(undefined , `${weather_descriptions}. It is currently ${temperature}\u00B0. Right now it feels like ${feelslike}\u00B0. The humidity is ${humidity}%.`)
         }
 
     })
