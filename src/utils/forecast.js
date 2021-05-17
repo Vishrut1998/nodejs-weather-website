@@ -16,7 +16,7 @@ const forecast = (latitude , longitude , callback) =>{
         }
         else{
             const {temperature , weather_descriptions} = body.current;
-            callback(undefined , `The temperature is ${temperature}\u00B0F and the overall forecast is ${weather_descriptions}`)
+            callback(undefined , `The temperature is ${temperature}\u00B0 and the overall forecast is ${weather_descriptions}`)
         }
 
     })
