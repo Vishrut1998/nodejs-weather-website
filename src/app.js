@@ -28,9 +28,11 @@ app.use(express.static(publicDirectory))
 
 app.get('/help' , (req,res) => {
     res.render('help' , {
-        message : 'Help Me , I am in trouble',
+        message : 'For any help or queries, contact :',
         title : 'Help',
-        name : 'Vishrut Sharma'
+        name : 'Vishrut Sharma',
+        contact : ' +91 9540105285',
+        emailId : 'sharmavishrut1998@gmail.com'
     })
 })
 
@@ -46,7 +48,7 @@ app.get('',(req,res) => {
 
 app.get('/about' , (req,res) => {
     res.render('about' , {
-        title : 'User',
+        title : 'About me:',
         name : 'Vishrut Sharma'
     } )
 })
